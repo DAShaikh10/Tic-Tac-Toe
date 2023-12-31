@@ -1,0 +1,22 @@
+{
+  "name": "tic-tac-toe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://DAShaikh10.github.io/Tic-Tac-Toe",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -b prod-vanilla-javascript"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

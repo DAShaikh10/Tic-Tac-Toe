@@ -1,0 +1,41 @@
+#title {
+  @extend .fredoka-bd;
+  color: $title-text-color;
+  font-size: 20em;
+  pointer-events: none;
+  position: absolute;
+  bottom: 0.11em;
+
+  p {
+    line-height: 0.56em;
+    margin: 0 0 0 -0.12em;
+
+    &:nth-child(2) {
+      color: $mid-title-text-color;
+    }
+  }
+
+  // Custom Laptop screen width: 1166px.
+  @media (max-width: $custom-laptop-screen-width) {
+    display: flex;
+    font-size: 5em;
+    bottom: auto;
+    top: -1.15em;
+
+    p {
+      line-height: 1rem;
+      margin: 0.5em 0.1em 0.5em 0;
+
+      &:nth-child(2) {
+        z-index: 0;
+      }
+    }
+  }
+
+  // Large Mobile screen width: (425 + 1)px.
+  @media (max-width: $lg-mobile-screen-width) {
+    bottom: auto;
+    left: 0.5em;
+    top: -0.1em;
+  }
+}

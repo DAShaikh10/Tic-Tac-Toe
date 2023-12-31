@@ -1,0 +1,30 @@
+#game-button {
+  @extend .fredoka-bd;
+  background-color: $white;
+  border: none;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+  font-size: 1rem;
+  justify-self: center;
+  padding: 0.8em;
+  text-transform: capitalize;
+  width: 18em;
+
+  &:hover {
+    background-color: $game-btn-default-hover-color;
+  }
+
+  &.turn {
+    border-radius: $border-radius-lg;
+    cursor: default;
+    text-transform: none;
+  }
+
+  &.x-turn {
+    background-color: $x-color;
+  }
+
+  &.o-turn {
+    background-color: $o-color;
+  }
+}

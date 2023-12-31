@@ -1,0 +1,14 @@
+table {
+  border-spacing: 1.2em;
+  margin: 3em 0 2em;
+
+  // Custom Laptop screen width: 1166px.
+  @media (max-width: $custom-laptop-screen-width) {
+    margin: 2em 0;
+  }
+
+  // Small Mobile screen width: (320 + 1)px.
+  @media (max-width: $sm-mobile-screen-width) {
+    margin: 1.2em 0;
+  }
+}

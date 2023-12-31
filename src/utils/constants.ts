@@ -1,0 +1,12 @@
+export const BOARD_SIZE: number = 9;
+export const DRAW_KEY: string = "draw";
+export const EMPTY_STRING: string = "";
+export const NEW_GAME_TEXT: string = "new game";
+export const SPACE: string = " ";
+export const O_CLASS: string = "o";
+export const O_KEY: string = "o".toUpperCase();
+export const O_TURN_CLASS: string = "o-turn";
+export const TURN_CLASS: string = "turn";
+export const X_CLASS: string = "x";
+export const X_TURN_CLASS: string = "x-turn";
+export const X_KEY: string = "x".toUpperCase();

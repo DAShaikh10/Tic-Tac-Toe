@@ -1,0 +1,34 @@
+#game-container {
+  @include grid($gap: 0);
+  background-color: $container-bg-color;
+  border-radius: 2rem;
+  padding: 5em 7em;
+
+  // Custom Laptop screen width: 1166px.
+  @media (max-width: $custom-laptop-screen-width) {
+    margin: 1.5rem 0;
+    padding: 4em 5em;
+  }
+
+  // Custom Mobile screen width: 465px.
+  @media (max-width: $custom-mobile-screen-width) {
+    padding: 4em 3em;
+  }
+
+  // Large Mobile screen width: (425 + 1)px.
+  @media (max-width: $custom-mobile-screen-width) {
+    margin: 0.5rem 0;
+  }
+
+  // Medium Mobile screen width: (375 + 1)px.
+  @media (max-width: $md-mobile-screen-width) {
+    border-radius: $border-radius-xl;
+    padding: 3.5em 2.5em;
+  }
+
+  // Small Mobile screen width: (320 + 1)px.
+  @media (max-width: $sm-mobile-screen-width) {
+    margin: 0.2rem 0 0.4rem;
+    padding: 3em 1em;
+  }
+}

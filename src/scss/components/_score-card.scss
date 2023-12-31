@@ -1,0 +1,22 @@
+.score-card {
+  border-radius: $border-radius-lg;
+  height: 5em;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 6em;
+
+  // Placeholder.
+  :first-child {
+    @extend .fredoka-md;
+    font-size: 1em;
+    margin: 0.8em 0 0;
+  }
+
+  // Score.
+  :last-child {
+    @extend .fredoka-sb;
+    font-size: 1.8em;
+    margin: 0.2em 0 0;
+  }
+}
