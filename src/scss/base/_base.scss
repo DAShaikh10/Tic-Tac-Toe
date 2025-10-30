@@ -1,0 +1,32 @@
+body {
+  background-color: $bg-color-dark;
+  font-family: $primary-font;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 2vh 3.5vw;
+
+  // Custom Laptop screen width: 1166px.
+  @media (max-width: $custom-laptop-screen-width) {
+    padding: 8vh 3.5vw 2vh;
+    transition: padding 150ms ease-in-out;
+  }
+
+  // Custom Tablet screen width: 658px.
+  @media (max-width: $custom-tablet-screen-width) {
+    padding-bottom: 2.8rem;
+    transition: padding-bottom 150ms ease-in-out;
+  }
+
+  // Large Mobile screen width: (425 + 1)px.
+  @media (max-width: $lg-mobile-screen-width) {
+    padding: 0;
+    padding-bottom: 2.75rem;
+    transition: padding 150ms ease-in-out;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: $primary-variable-font;
+  }
+}

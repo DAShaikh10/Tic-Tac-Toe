@@ -1,0 +1,19 @@
+#score-board {
+  @include flexbox($justify-content: center);
+
+  > * {
+    // Player X score card.
+    &:first-child {
+      background-color: $x-color;
+    }
+    // Draw score card.
+    &:nth-child(2) {
+      background-color: $draw-color;
+    }
+
+    // Player O score card.
+    &:last-child {
+      background-color: $o-color;
+    }
+  }
+}

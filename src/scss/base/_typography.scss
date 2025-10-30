@@ -1,0 +1,84 @@
+$_primary-font: "Fredoka";
+$_primary-variable-font: "Fredoka Variable";
+$_secondary-font: "Inter";
+
+// Variable fonts.
+@font-face {
+  font-family: $_primary-variable-font;
+  font-weight: 500 700;
+  src: url("/src/assets/fonts/fredoka/fredoka.ttf") format("truetype"),
+    url("/src/assets/fonts/fredoka/fredoka.ttf") format("truetype-variations");
+}
+
+// Fallback fonts.
+@font-face {
+  font-family: $_primary-font;
+  font-weight: 500;
+  src: url("/src/assets/fonts/fredoka/static/Fredoka-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: $_primary-font;
+  font-weight: 600;
+  src: url("/src/assets/fonts/fredoka/static/Fredoka-SemiBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: $_primary-font;
+  font-weight: 700;
+  src: url("/src/assets/fonts/fredoka/static/Fredoka-Bold.ttf")
+    format("truetype");
+}
+
+// Static fonts.
+@font-face {
+  font-family: $_secondary-font;
+  font-weight: 700;
+  src: url("/src/assets/fonts/inter/static/Inter-Bold.ttf") format("truetype");
+}
+
+@mixin font($font-family, $font-weight) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+
+// Font classes.
+.fredoka-md {
+  @include font($primary-font, 500);
+}
+
+.fredoka-sb {
+  @include font($primary-font, 600);
+}
+
+.fredoka-bd {
+  @include font($primary-font, 700);
+}
+
+@supports (font-variation-settings: "wght" 500) {
+  .fredoka-md {
+    @include font($primary-variable-font, 500);
+  }
+}
+
+@supports (font-variation-settings: "wght" 600) {
+  .fredoka-sb {
+    @include font($primary-variable-font, 600);
+  }
+}
+
+@supports (font-variation-settings: "wght" 700) {
+  .fredoka-bd {
+    @include font($primary-variable-font, 700);
+  }
+}
+
+.inter {
+  @include font($secondary-font, 700);
+}
+
+.github {
+  @include font($github-font, 600);
+}

@@ -1,0 +1,19 @@
+#actions {
+  @include grid();
+  position: absolute;
+  bottom: 3em;
+  right: 3em;
+
+  // Custom Tablet screen width: 658px.
+  @media (max-width: $custom-tablet-screen-width) {
+    display: flex;
+    bottom: -3.75em;
+    right: 0;
+  }
+
+  // Large Mobile screen width: (425 + 1)px.
+  @media (max-width: $lg-mobile-screen-width) {
+    bottom: -3.5em;
+    right: 1em;
+  }
+}

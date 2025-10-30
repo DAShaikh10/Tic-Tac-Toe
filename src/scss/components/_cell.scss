@@ -1,0 +1,46 @@
+// Mixin's.
+@mixin button-common {
+  background-color: $bg-color-dark;
+  border: none;
+  border-radius: $border-radius-lg;
+  color: $bg-color-dark;
+  cursor: pointer;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    background-color: $bg-color-light;
+    color: $bg-color-light;
+  }
+}
+
+@mixin clicked {
+  background-color: $bg-color-dark;
+  border-radius: $border-radius-lg;
+  cursor: default;
+  font-size: 5em;
+  height: 5rem;
+  width: 5rem;
+}
+
+// SCSS.
+table button {
+  @extend .fredoka-bd;
+  @include button-common;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &.x {
+    @include clicked();
+    color: $x-color;
+  }
+
+  &.o {
+    @include clicked();
+    color: $o-color;
+  }
+}

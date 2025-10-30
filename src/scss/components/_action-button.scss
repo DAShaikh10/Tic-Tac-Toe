@@ -1,0 +1,26 @@
+.action-button,
+.action-button:visited {
+  @include flexbox($align-items: center, $gap: 0.4em);
+  background-color: $action-btn-bg-color;
+  background-image: linear-gradient(
+    180deg,
+    $action-btn-bg-gradient-from-color,
+    $action-btn-bg-color 90%
+  );
+  border: 1px solid $action-btn-border-color;
+  border-radius: $border-radius-md;
+  color: $action-btn-text-color;
+  justify-self: end;
+  font-size: 1.3em;
+  overflow: hidden;
+  padding: 0.2em 0.5em 0.2em 0.3em;
+  text-decoration: none;
+  width: auto;
+  max-width: 1.35em;
+  transition: max-width 1000ms ease-in-out;
+  white-space: nowrap;
+
+  &.hovered {
+    max-width: 15em;
+  }
+}

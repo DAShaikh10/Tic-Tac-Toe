@@ -1,0 +1,13 @@
+@mixin flexbox($align-items: normal, $justify-content: normal, $gap: 1em) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin grid($align-items: normal, $justify-content: normal, $gap: 1em) {
+  display: grid;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
