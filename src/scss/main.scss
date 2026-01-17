@@ -1,18 +1,18 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/variables";
 
-@import "base/base";
-@import "base/typography";
+@use "base/base";
+@use "base/typography";
 
-@import "layout/actions";
-@import "layout/backdrop";
-@import "layout/board";
-@import "layout/header";
-@import "layout/score-board";
+@use "layout/actions";
+@use "layout/backdrop";
+@use "layout/board";
+@use "layout/header";
+@use "layout/score-board";
 
-@import "components/action-button";
-@import "components/cell";
-@import "components/game-button";
-@import "components/game-container";
-@import "components/score-card";
-@import "components/toast";
+@use "components/action-button";
+@use "components/cell";
+@use "components/game-button";
+@use "components/game-container";
+@use "components/score-card";
+@use "components/toast";

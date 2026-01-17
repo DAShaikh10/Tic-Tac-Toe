@@ -1,3 +1,5 @@
+@use "/src/scss/abstracts/variables";
+
 $_primary-font: "Fredoka";
 $_primary-variable-font: "Fredoka Variable";
 $_secondary-font: "Inter";
@@ -6,7 +8,8 @@ $_secondary-font: "Inter";
 @font-face {
   font-family: $_primary-variable-font;
   font-weight: 500 700;
-  src: url("/src/assets/fonts/fredoka/fredoka.ttf") format("truetype"),
+  src:
+    url("/src/assets/fonts/fredoka/fredoka.ttf") format("truetype"),
     url("/src/assets/fonts/fredoka/fredoka.ttf") format("truetype-variations");
 }
 
@@ -46,39 +49,39 @@ $_secondary-font: "Inter";
 
 // Font classes.
 .fredoka-md {
-  @include font($primary-font, 500);
+  @include font(variables.$primary-font, 500);
 }
 
 .fredoka-sb {
-  @include font($primary-font, 600);
+  @include font(variables.$primary-font, 600);
 }
 
 .fredoka-bd {
-  @include font($primary-font, 700);
+  @include font(variables.$primary-font, 700);
 }
 
 @supports (font-variation-settings: "wght" 500) {
   .fredoka-md {
-    @include font($primary-variable-font, 500);
+    @include font(variables.$primary-variable-font, 500);
   }
 }
 
 @supports (font-variation-settings: "wght" 600) {
   .fredoka-sb {
-    @include font($primary-variable-font, 600);
+    @include font(variables.$primary-variable-font, 600);
   }
 }
 
 @supports (font-variation-settings: "wght" 700) {
   .fredoka-bd {
-    @include font($primary-variable-font, 700);
+    @include font(variables.$primary-variable-font, 700);
   }
 }
 
 .inter {
-  @include font($secondary-font, 700);
+  @include font(variables.$secondary-font, 700);
 }
 
 .github {
-  @include font($github-font, 600);
+  @include font(variables.$github-font, 600);
 }
