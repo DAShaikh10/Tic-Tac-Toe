@@ -1,8 +1,11 @@
+@use "/src/scss/base/typography";
+@use "/src/scss/abstracts/variables";
+
 #game-button {
   @extend .fredoka-bd;
-  background-color: $white;
+  background-color: variables.$white;
   border: none;
-  border-radius: $border-radius-sm;
+  border-radius: variables.$border-radius-sm;
   cursor: pointer;
   font-size: 1rem;
   justify-self: center;
@@ -11,20 +14,20 @@
   width: 18em;
 
   &:hover {
-    background-color: $game-btn-default-hover-color;
+    background-color: variables.$game-btn-default-hover-color;
   }
 
   &.turn {
-    border-radius: $border-radius-lg;
+    border-radius: variables.$border-radius-lg;
     cursor: default;
     text-transform: none;
   }
 
   &.x-turn {
-    background-color: $x-color;
+    background-color: variables.$x-color;
   }
 
   &.o-turn {
-    background-color: $o-color;
+    background-color: variables.$o-color;
   }
 }

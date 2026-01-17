@@ -1,9 +1,12 @@
-// Mixin's.
+@use "/src/scss/base/typography";
+@use "/src/scss/abstracts/variables";
+
+// Mixins.
 @mixin button-common {
-  background-color: $bg-color-dark;
+  background-color: variables.$bg-color-dark;
   border: none;
-  border-radius: $border-radius-lg;
-  color: $bg-color-dark;
+  border-radius: variables.$border-radius-lg;
+  color: variables.$bg-color-dark;
   cursor: pointer;
   height: 6em;
   width: 6em;
@@ -11,14 +14,14 @@
   transition: opacity 150ms ease;
 
   &:hover {
-    background-color: $bg-color-light;
-    color: $bg-color-light;
+    background-color: variables.$bg-color-light;
+    color: variables.$bg-color-light;
   }
 }
 
 @mixin clicked {
-  background-color: $bg-color-dark;
-  border-radius: $border-radius-lg;
+  background-color: variables.$bg-color-dark;
+  border-radius: variables.$border-radius-lg;
   cursor: default;
   font-size: 5em;
   height: 5rem;
@@ -36,11 +39,11 @@ table button {
 
   &.x {
     @include clicked();
-    color: $x-color;
+    color: variables.$x-color;
   }
 
   &.o {
     @include clicked();
-    color: $o-color;
+    color: variables.$o-color;
   }
 }

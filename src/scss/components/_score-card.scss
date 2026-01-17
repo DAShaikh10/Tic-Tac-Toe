@@ -1,5 +1,8 @@
+@use "/src/scss/base/typography";
+@use "/src/scss/abstracts/variables";
+
 .score-card {
-  border-radius: $border-radius-lg;
+  border-radius: variables.$border-radius-lg;
   height: 5em;
   padding: 1em;
   text-align: center;

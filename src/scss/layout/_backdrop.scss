@@ -1,6 +1,9 @@
+@use "/src/scss/abstracts/mixins";
+@use "/src/scss/abstracts/variables";
+
 #backdrop {
-  @include grid($align-items: center, $justify-content: center);
-  background-color: $bg-color-light;
+  @include mixins.grid($align-items: center, $justify-content: center);
+  background-color: variables.$bg-color-light;
   border-radius: 3rem;
   height: 96vh;
   width: 93vw;
@@ -8,14 +11,14 @@
   position: relative;
 
   // Custom Laptop screen width: 1166px.
-  @media (max-width: $custom-laptop-screen-width) {
+  @media (max-width: variables.$custom-laptop-screen-width) {
     height: auto;
     margin: auto;
     overflow: visible;
   }
 
   // Large Mobile screen width: (425 + 1)px.
-  @media (max-width: $lg-mobile-screen-width) {
+  @media (max-width: variables.$lg-mobile-screen-width) {
     border-radius: 0;
     padding-top: 5em;
     width: 100vw;
@@ -23,7 +26,7 @@
   }
 
   // Mobile Medium screen width: (375 + 1)px.
-  @media (max-width: $md-mobile-screen-width) {
+  @media (max-width: variables.$md-mobile-screen-width) {
     padding: 5.5em 0 0.2em;
   }
 }

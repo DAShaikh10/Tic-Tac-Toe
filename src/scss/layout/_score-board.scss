@@ -1,19 +1,22 @@
+@use "/src/scss/abstracts/mixins";
+@use "/src/scss/abstracts/variables";
+
 #score-board {
-  @include flexbox($justify-content: center);
+  @include mixins.flexbox($justify-content: center);
 
   > * {
     // Player X score card.
     &:first-child {
-      background-color: $x-color;
+      background-color: variables.$x-color;
     }
     // Draw score card.
     &:nth-child(2) {
-      background-color: $draw-color;
+      background-color: variables.$draw-color;
     }
 
     // Player O score card.
     &:last-child {
-      background-color: $o-color;
+      background-color: variables.$o-color;
     }
   }
 }

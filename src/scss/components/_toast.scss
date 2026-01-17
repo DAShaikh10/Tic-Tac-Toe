@@ -1,3 +1,6 @@
+@use "/src/scss/base/typography";
+@use "/src/scss/abstracts/variables";
+
 $toast-img-offset: -2em;
 
 #toast {
@@ -6,9 +9,9 @@ $toast-img-offset: -2em;
 
   p {
     @extend .inter;
-    background-color: $toast-bg-color;
-    border-radius: $border-radius-sm;
-    color: $white;
+    background-color: variables.$toast-bg-color;
+    border-radius: variables.$border-radius-sm;
+    color: variables.$white;
     font-size: 1.5em;
     margin: 0 0 2em;
     padding: 0.8rem 2.5rem;
@@ -16,7 +19,7 @@ $toast-img-offset: -2em;
     z-index: 1;
 
     // Small Mobile screen width: (320 + 1)px.
-    @media (max-width: $sm-mobile-screen-width) {
+    @media (max-width: variables.$sm-mobile-screen-width) {
       padding: 0.8rem 1.5rem;
     }
   }
