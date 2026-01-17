@@ -1,5 +1,5 @@
-@use "/src/scss/base/typography";
-@use "/src/scss/abstracts/variables";
+@use "../../base/typography";
+@use "../../abstracts/variables";
 
 .score-card {
   border-radius: variables.$border-radius-lg;
