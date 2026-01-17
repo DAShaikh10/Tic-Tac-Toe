@@ -1,7 +1,7 @@
 @use "/src/scss/base/typography";
 @use "/src/scss/abstracts/variables";
 
-// Mixin's.
+// Mixins.
 @mixin button-common {
   background-color: variables.$bg-color-dark;
   border: none;
