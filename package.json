@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d dist -b prod-vanilla-javascript"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.2",
+    "autoprefixer": "^10.5.4",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.16",
     "sass": "^1.101.0",
