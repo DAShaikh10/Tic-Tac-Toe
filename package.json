@@ -1,7 +1,8 @@
 {
   "name": "tic-tac-toe",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
   "type": "module",
   "homepage": "https://DAShaikh10.github.io/Tic-Tac-Toe",
   "scripts": {
