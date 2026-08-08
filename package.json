@@ -15,7 +15,7 @@
   "devDependencies": {
     "autoprefixer": "^10.5.4",
     "gh-pages": "^6.3.0",
-    "postcss": "^8.5.22",
+    "postcss": "^8.5.25",
     "sass": "^1.101.7",
     "typescript": "^7.0.2",
     "vite": "^8.1.5"
