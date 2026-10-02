@@ -16,7 +16,7 @@
     "autoprefixer": "^10.6.1",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.28",
-    "sass": "^1.104.1",
+    "sass": "^1.105.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.0"
   }
